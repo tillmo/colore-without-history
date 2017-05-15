@@ -1,0 +1,48 @@
+
+(cl-text http://colore.oor.net/magma/definitions/magma_def.clif
+
+(cl-imports http://colore.oor.net/magma/quasigroup.clif)
+
+(forall (x)
+	(iff	(identity x)
+		(forall (y)
+			(and	(= y (op x y))
+				(= y (op y x))))))
+
+(forall (x y)
+	(iff	(inverse x y)
+		(and	(= (op (op x y) x) x)
+			(= (op (op y x) y) y))))
+
+(forall (x y)
+	(iff	(weak_inverse x y)
+		(= (op (op y x) y) y)))
+
+(forall (x y)
+	(iff	(left_inverse x y)
+		(exists (z)
+			(and	(identity z)
+				(= (op y x) z)))))
+
+(forall (x y)
+	(iff	(right_inverse x y)
+		(exists (z)
+			(and	(identity z)
+				(= (op x y) z)))))x
+
+(forall (x)
+	(iff	(group_inverse x y)
+		(and	(right_inverse x y)
+			(left_inverse x y))))
+
+(forall (x)
+	(iff	(idempotent x)
+		(= (op x x) x)))
+
+(forall (x)
+	(iff	(absorbing x)
+		(forall (y)
+			(and	(= x (op x y))
+				(= x (op y x))))))
+
+)

@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/quadripartite_incidence/space_existence.clif
+
+(cl-imports http://colore.oor.net/quadripartite_incidence/weak_quadripartite.clif)
+
+(forall (x)
+	(if	(plane x)
+		(exists (y)
+			(and	(space y)
+				(in x y)))))
+
+)

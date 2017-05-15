@@ -1,0 +1,8 @@
+
+(cl-text http://colore.oor.net/process_specification_language/psl_outercore.clif
+
+(cl-imports http://colore.oor.net/psl_disc_state/disc_state.clif)
+
+(cl-imports http://colore.oor.net/psl_actocc/actocc.clif)
+
+)

@@ -1,0 +1,19 @@
+
+(cl-text http://colore.oor.net/mereological_bundle/em_bundle.clif
+
+(cl-imports http://colore.oor.net/mereological_bundle/m_bundle.clif)
+
+(cl-imports http://colore.oor.net/mereological_bundle/mereological_bundle_def.clif)
+
+(forall (x y p)
+	(if	(and	(line x)
+			(line y)
+			(point p)
+			(in x p)
+			(in y p)
+			(not (tpart x y p)))
+		(exists (z)
+			(and	(tpart z x p)
+				(tdisjoint z y p)))))
+
+)

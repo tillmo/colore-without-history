@@ -1,0 +1,14 @@
+(cl-text http://colore.oor.net/subgraph/partial_simple_hom.clif
+
+(cl-imports http://colore.oor.net/subgraph/preserve_graph.clif)
+
+(forall (x y l)
+	(if	(and	(adj x y)
+			(point x)
+			(point y)
+			(line l)
+			(in x l)
+			(in y l))
+		(= x y)))
+
+)

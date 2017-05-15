@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/quivers/simple_digraph.clif
+
+(cl-imports http://colore.oor.net/quivers/simple_quiver.clif)
+
+(forall (e x y)
+	(if	(arc e x y)
+		(not (exists (ep)
+			(arc ep y x)))))
+)

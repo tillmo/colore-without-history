@@ -1,0 +1,17 @@
+(cl-text http://colore.oor.net/between/shepperd_linear.clif
+
+(cl-imports http://colore.oor.net/between/shepperd.clif)
+
+(forall (x y z w)
+	(if	(and	(between x y z)
+			(between x z w))
+		(between x y w)))
+
+(forall (x y z w)
+	(if	(and	(between x y z)
+			(between y z w)
+			(not (between x y w)))
+		(= y z)))
+
+)
+

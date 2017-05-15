@@ -1,0 +1,25 @@
+
+(cl-text http://colore.oor.net/quivers/quiver.clif
+
+(forall (e x y)
+	(if	(arc e x y)
+		(and	(edge e)
+			(vertex x)
+			(vertex y))))
+
+(forall (x)
+	(if	(edge x)
+		(not (vertex x))))
+		
+(forall (x)
+	(if	(edge x)
+		(exists (y z)
+			(arc x y z))))
+
+(forall (e x y z u v)
+	(if	(and	(arc e x y)
+			(arc e u v))
+		(and	(= x u)
+			(= y v))))
+
+)

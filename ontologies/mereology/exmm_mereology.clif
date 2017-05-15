@@ -1,0 +1,16 @@
+
+(cl-text http://colore.oor.net/mereology/exmm_mereology.clif
+
+(cl-imports http://colore.oor.net/mereology/mm_mereology.clif)
+
+(cl-imports http://colore.oor.net/mereology/definitions/mereology_def.clif)
+
+(cl-comment "Extensionality")
+(forall (x y w)
+        (if     (and	(ppart w x)
+			(not (= x y)))
+                (exists (z)
+                        (iff    (ppart z x)
+                                (not (ppart z y))))))
+
+)

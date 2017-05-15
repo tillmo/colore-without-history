@@ -1,0 +1,28 @@
+
+(cl-text http://colore.oor.net/mereological_bundle/m_bundle.clif
+
+(cl-imports http://colore.oor.net/bipartite_incidence/weak_bipartite.clif)
+
+(forall (x y p)
+	(if	(tpart x y p)
+		(and	(line x)
+			(line y)
+			(point p))))
+
+(forall (x y p)
+	(if	(tpart x y p)
+		(and	(in x p)
+			(in y p))))
+
+(forall (x p)
+	(if	(and	(line x)
+			(point p)
+			(in p x))
+		(tpart x x p)))
+
+(forall (x y z p)
+        (if     (and    (tpart x y p)
+                        (tpart y z p))
+                (tpart x z p)))
+
+)

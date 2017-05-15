@@ -1,0 +1,20 @@
+
+(cl-text http://colore.oor.net/tarski_geometry/continuity_tarski.clif
+
+(cl-imports http://colore.oor.net/tarski_geometry/between_tarski.clif)
+
+(cl-comment "Axiom of Continuity")
+(forall (p q)
+	(if	(exists (a)
+			(forall (x y)
+				(if	(and	(p x)
+						(q y))
+					(between a x y))))
+		(exists (b)
+			(forall (x y)
+				(if	(and	(p x)
+						(q y))
+					(between x b y))))))
+		
+
+)

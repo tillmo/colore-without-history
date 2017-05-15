@@ -1,0 +1,25 @@
+
+(cl-text http://colore.oor.net/orderings/tarski_semiboolean.clif
+
+(cl-imports http://colore.oor.net/orderings/partial_ordering.clif)
+
+(cl-imports http://colore.oor.net/orderings/definitions/tarski_defs.clif)
+
+(forall (x y)
+	(exists (s)
+		(join x y s)))
+
+(forall (x)
+	(iff	(exists (z)
+			(not (leq z x)))
+		(exists (y)
+			(and	(disjoint x y)
+				(forall (z)
+					(if	(disjoint x z)
+						(leq z y)))
+				(forall (z)
+					(if	(disjoint z y)
+						(leq z x)))))))
+			
+
+)

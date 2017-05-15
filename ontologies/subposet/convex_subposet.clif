@@ -1,0 +1,13 @@
+
+(cl-text http://colore.oor.net/subposet/convex_subposet.clif
+
+(cl-imports http://colore.oor.net/subposet/partial_subposet.clif)
+
+(forall (x y z u)
+	(if	(and	(part x u)
+			(part z u)
+			(leq x y)
+			(leq y z))
+		(part y u)))
+
+)

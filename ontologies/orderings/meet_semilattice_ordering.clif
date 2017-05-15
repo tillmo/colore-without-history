@@ -1,0 +1,18 @@
+
+(cl-text http://colore.oor.net/orderings/meet_semilattice_ordering.clif
+
+(cl-imports http://colore.oor.net/orderings/partial_ordering.clif)
+
+(cl-comment "Unique meet")
+
+(forall (x y) 
+	(exists (m)
+		(and 	(leq m x)
+			(leq m y)
+			(forall (z)
+				(if	(and	(leq z x)
+						(leq z y))
+					(leq z m))))))
+						
+
+)

@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/tripartite_incidence/partial_plane.clif
+
+(cl-imports http://colore.oor.net/tripartite_incidence/weak_tripartite.clif)
+
+(forall (y)
+	(if	(plane y)
+		(exists (x)
+			(and	(line x)
+				(in x y)))))
+
+)

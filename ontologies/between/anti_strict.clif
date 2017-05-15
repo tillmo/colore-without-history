@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/between/anti_strict.clif
+
+(cl-imports http://colore.oor.net/between/betweenness.clif)
+
+(forall (p q)
+	(between p p q))
+
+)
+

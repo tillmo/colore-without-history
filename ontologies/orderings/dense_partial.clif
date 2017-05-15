@@ -1,0 +1,11 @@
+
+(cl-text http://colore.oor.net/orderings/dense_partial.clif
+
+(cl-imports http://colore.oor.net/orderings/partial_ordering.clif)
+
+(forall (x y)
+   	(exists (z) 
+		(and	(lt x z) 
+			(lt z y))))
+
+)

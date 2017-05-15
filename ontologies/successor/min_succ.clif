@@ -1,0 +1,11 @@
+
+(cl-text http://colore.oor.net/successor/min_succ.clif
+
+(cl-imports http://colore.oor.net/successor/successor.clif)
+
+(cl-imports http://colore.oor.net/successor/definitions/successor_def.clif)
+
+(exists (x)
+	(zero x))
+
+)

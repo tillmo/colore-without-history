@@ -1,0 +1,11 @@
+(cl-text http://colore.oor.net/between/sholander_tree.clif
+
+(cl-imports http://colore.oor.net/between/sholander.clif)
+
+(forall (a b c)
+	(exists (x)
+		(and	(between a x b)
+			(between b x c)
+			(between c x a))))
+
+)

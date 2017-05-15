@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/subposet/chain_antichain.clif
+
+(cl-imports http://colore.oor.net/subposet/partial_subposet.clif)
+
+(forall (x y)
+	(if	(or	(part x y)
+			(part y x))
+		(not 	(or	(lt x y)
+				(lt y x)))))
+
+)

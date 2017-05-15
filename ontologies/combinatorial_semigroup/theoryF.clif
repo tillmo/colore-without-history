@@ -1,0 +1,29 @@
+
+(cl-text http://colore.oor.net/combinatorial_semigroup/theoryF.clif
+
+(cl-imports http://colore.oor.net/magma/semigroup.clif)
+
+(forall (x y z)
+	(if	(= (op x y) (op x z))
+		(= y z)))
+
+(forall (x y z)
+	(if	(= (op x z) (op y z))
+		(= x y)))
+
+(forall (z)
+	(or	(generator z)
+		(exists (x y)
+			(and	(generator y)
+				(= z (op x y))))))
+
+(forall (x y z w)
+	(if	(and	(generator w)
+			(generator z)
+			(= (op x w) (op y z)))
+		(= w z)))
+
+(forall (x y)
+	(not (= (x (op x y)))))
+
+)

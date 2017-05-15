@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/planar_mereology/atomic_line_containment.clif
+
+(cl-imports http://colore.oor.net/planar_mereology/weak_planar_mereology.clif)
+
+(forall (q l p)
+	(if	(and	(plane q)
+			(line l)
+			(in l q)
+			(atomic_part p)
+			(in p l))
+		(in p q)))
+
+)

@@ -1,0 +1,7 @@
+(cl-text http://colore.oor.net/between/strict_linear_bet.clif
+
+(cl-imports http://colore.oor.net/between/bet.clif)
+
+(cl-imports http://colore.oor.net/between/strict_linearity.clif)
+
+)

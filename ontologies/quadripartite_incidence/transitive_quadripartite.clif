@@ -1,0 +1,22 @@
+
+(cl-text http://colore.oor.net/quadripartite_incidence/transitive_quadripartite.clif
+
+(cl-imports http://colore.oor.net/quadripartite_incidence/weak_quadripartite.clif)
+
+(forall (x y z)
+	(if	(and	(line x)
+			(plane y)
+			(space z)
+			(in z y)
+			(in y x))
+		(in z x)))
+
+(forall (x y z)
+	(if	(and	(point x)
+			(line y)
+			(space z)
+			(in z y)
+			(in y x))
+		(in z x)))
+
+)

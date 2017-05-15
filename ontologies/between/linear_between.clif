@@ -1,0 +1,15 @@
+(cl-text http://colore.oor.net/between/linear_between.clif
+
+(cl-imports http://colore.oor.net/between/betweenness.clif)
+
+(forall (x y z w)
+	(if	(between y x z)
+		(or	(between y x w)
+			(between z x w))))
+
+(forall (x y z)
+	(or	(between y x z)
+		(between z y x)
+		(between x z y)))
+
+)

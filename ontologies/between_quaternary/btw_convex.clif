@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/between_quaternary/btw_convex.clif
+
+(cl-imports http://colore.oor.net/between_quaternary/btw_root.clif)
+
+(forall (l x y z w v)
+	(if 	(and 	(Btw l x y z)
+			(Btw l x w z)
+			(Btw l y v w))
+		(Btw l x v z)))
+
+
+
+)

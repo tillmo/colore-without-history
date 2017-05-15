@@ -1,0 +1,21 @@
+
+(cl-text http://colore.oor.net/betweenness_bundle/b_bundle.clif
+
+(cl-imports http://colore.oor.net/between_quaternary/btw_root.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/weak_bipartite.clif)
+
+(forall (l x y z)
+	(if	(Btw l x y z)
+		(and	(line l)
+			(point x)
+			(point y)
+			(point z))))
+
+(forall (l x y z)
+	(if	(Btw l x y z)
+		(and	(in x l)
+			(in y l)
+			(in z l))))
+
+)

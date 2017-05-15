@@ -1,0 +1,8 @@
+
+(cl-text http://colore.oor.net/orderings/discrete_chains.clif
+
+(cl-imports http://colore.oor.net/orderings/chains.clif)
+
+(cl-imports http://colore.oor.net/orderings/discreteness.clif)
+
+)

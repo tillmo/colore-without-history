@@ -1,0 +1,13 @@
+(cl-text http://colore.oor.net/between/infinite_bet.clif
+
+(cl-imports http://colore.oor.net/between/strict_between.clif)
+
+(cl-imports http://colore.oor.net/between/strong_between.clif)
+
+(forall (x y)
+	(exists (z)
+		(between x y z)))
+
+)
+
+

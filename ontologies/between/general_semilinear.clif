@@ -1,0 +1,13 @@
+
+(cl-text http://colore.oor.net/between/general_semilinear.clif
+
+(cl-imports http://colore.oor.net/between/semilinear.clif)
+
+(forall (a b c)
+	(if	(not (between b a c))
+		(exists (d)
+			(and	(not (= d a))
+				(between a d b)
+				(between a d c)))))
+
+)

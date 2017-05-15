@@ -1,0 +1,13 @@
+
+(cl-text http://colore.oor.net/ordered_geometry/weog.clif
+
+(cl-imports http://colore.oor.net/ordered_geometry/wog.clif)
+
+(forall (x y)
+	(if	(between x x y)
+		(exists (l)
+			(and	(line l)
+				(in x l)
+				(in y l)))))
+
+)

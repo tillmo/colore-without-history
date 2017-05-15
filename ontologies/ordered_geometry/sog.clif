@@ -1,0 +1,20 @@
+
+(cl-text http://colore.oor.net/ordered_geometry/sog.clif
+
+(cl-imports http://colore.oor.net/ordered_geometry/wog.clif)
+
+(forall (x y z w l)
+	(if	(and	(between y x z)
+			(line l)
+			(point x)
+			(point y)
+			(point z)
+			(point w)
+			(in x l)
+			(in y l)
+			(in z l)
+			(in w l))
+		(or	(between y x w)
+			(between z x w))))
+
+)

@@ -1,0 +1,19 @@
+(cl-text http://colore.oor.net/periods/periods.clif
+
+(cl-imports http://colore.oor.net/periods/periods_root.clif)
+
+(cl-imports http://colore.oor.net/periods/definitions/periods_def.clif)
+
+(cl-comment "MON-2")
+(forall (x y z)
+(if     (and    (precedence x y)
+		(inclusion z y))
+        (precedence x z)))
+
+(cl-comment "CONJ")
+(forall	(x y)
+(if	(overlaps x y)
+	(exists	(z)
+		(glb x y z))))
+
+)

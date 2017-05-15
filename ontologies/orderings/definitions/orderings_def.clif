@@ -1,0 +1,40 @@
+
+(cl-text http://colore.oor.net/orderings/definitions/orderings_def.clif
+
+(cl-imports http://colore.oor.net/orderings/quasiorder.clif)
+
+(forall (x y)
+		(iff	(lt x y)
+				(and	(leq x y)
+				(not (leq y x)))))
+
+(forall (x)
+		(iff	(minimal x)
+				(not	(exists (y)
+								(lt y x)))))
+
+(forall (x)
+		(iff	(maximal x)
+				(not	(exists (y)
+								(lt x y)))))		
+		
+(forall (x y)
+(iff	(incomparable x y)
+	(and	(not (= x y))
+		(not (leq x y))
+		(not (leq y x)))))
+
+(forall (x y)
+(iff    (covers y x)
+        (and    (lt x y)
+                (not (exists (z)
+                        (and    (lt x z)
+                                (lt z y)))))))
+
+(forall (x y)
+(iff	(compatible x y)
+	(exists (z)
+		(and	(leq z x)
+			(leq z y)))))
+
+)

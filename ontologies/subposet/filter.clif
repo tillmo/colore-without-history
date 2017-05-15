@@ -1,0 +1,13 @@
+
+(cl-text http://colore.oor.net/subposet/filter.clif
+
+(cl-imports http://colore.oor.net/subposet/upper_set.clif)
+
+(forall (x y)
+	(if	(and	(mereo_element x)
+			(mereo_element y))
+		(exists (z)
+			(and	(leq z x)
+				(leq z y)))))
+
+)

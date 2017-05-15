@@ -1,0 +1,18 @@
+(cl-text http://colore.oor.net/ordered_arithmetic/succ_less.clif
+
+(cl-imports http://colore.oor.net/orderings/linear_ordering.clif)
+
+(cl-imports http://colore.oor.net/successor/unique_min_succ.clif)
+
+(cl-imports http://colore.oor.net/successor/definitions/successor_def.clif)
+
+(forall (x y z)
+	(if	(S y z)
+		(iff	(lt x z)
+			(leq x y))))
+
+(forall (x y)
+	(if	(zero y)
+		(not (lt x y))))
+
+)

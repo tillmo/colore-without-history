@@ -1,0 +1,16 @@
+
+(cl-text http://colore.oor.net/between/bet_du.clif
+
+(cl-imports http://colore.oor.net/between/reflexive_bet.clif)
+
+(forall (a b c)
+	(if	(between a b c)
+		(between a a b)))
+
+(forall (a b c)
+	(if	(and	(between a b c)
+			(between a c b))
+		(= b c)))
+
+)
+

@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/bipartite_incidence/affine_plane.clif
+
+(cl-imports http://colore.oor.net/bipartite_incidence/linear_space.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/parallel_existence.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/unique_parallel.clif)
+
+)

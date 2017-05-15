@@ -1,0 +1,7 @@
+(cl-text http://colore.oor.net/magma/monoid.clif
+
+(cl-imports http://colore.oor.net/magma/semigroup.clif)
+
+(cl-imports http://colore.oor.net/magma/unital.clif)
+
+)

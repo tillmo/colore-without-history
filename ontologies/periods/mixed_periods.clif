@@ -1,0 +1,27 @@
+(cl-text http://colore.oor.net/periods/mixed_periods.clif
+
+(cl-imports http://colore.oor.net/periods/ordered_periods.clif)
+
+(cl-imports http://colore.oor.net/periods/finite_periods.clif)
+
+(cl-imports http://colore.oor.net/periods/definitions/periods_def.clif)
+
+(cl-comment "NEIGH-1")
+(forall (x y)
+(if		(precedence x y)
+		(exists (w)
+				(and	(precedence x w)
+						(not	(exists (z)
+										(and	(precedence x z)
+												(precedence z w))))))))
+
+(cl-comment "NEIGH-2")
+(forall (x y)
+	(if	(precedence y x)
+		(exists (w)
+			(and	(precedence w x)
+				(not (exists (z)
+					(and	(precedence w z)
+						(precedence z x))))))))
+
+)

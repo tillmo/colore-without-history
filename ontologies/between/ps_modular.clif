@@ -1,0 +1,10 @@
+(cl-text http://colore.oor.net/between/ps_modular.clif
+
+(cl-imports http://colore.oor.net/between/bet_ps.clif)
+
+(forall (a b c d)
+	(if	(and	(between a b c)
+			(between b d c))
+		(between a b d)))
+
+)

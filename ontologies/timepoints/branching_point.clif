@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/timepoints/branching_point.clif
+
+(cl-imports http://colore.oor.net/timepoints/bp_ordering.clif)
+
+(exists (x)
+	(and	(timepoint x)
+		(not (exists (y)
+			(and	(timepoint y)
+				(before y x))))))
+
+)

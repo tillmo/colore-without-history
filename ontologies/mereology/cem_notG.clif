@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/mereology/cem_notG.clif
+
+(cl-imports http://colore.oor.net/mereology/cem_mereology.clif)
+
+(forall (x)
+	(exists (y)
+		(not (part y x))))
+
+)

@@ -1,0 +1,7 @@
+(cl-text http://colore.oor.net/periods/periods_over_integers.clif
+
+(cl-imports http://colore.oor.net/periods/mixed_periods.clif)
+
+(cl-imports http://colore.oor.net/periods/atomic_periods.clif)
+
+)	

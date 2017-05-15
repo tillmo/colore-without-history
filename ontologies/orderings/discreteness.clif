@@ -1,0 +1,23 @@
+
+(cl-text http://colore.oor.net/orderings/discreteness.clif
+
+(cl-imports http://colore.oor.net/orderings/quasiorder.clif)
+
+(cl-imports http://colore.oor.net/orderings/definitions/orderings_def.clif)
+
+
+(cl-comment "Downwards discreteness")
+(forall (x y)
+	(if	(lt x y)
+		(exists (z)
+			(and	(covers y z)
+				(leq x z)))))
+
+(cl-comment "Upwards discreteness")
+(forall (x y)
+	(if	(lt x y)
+		(exists (z)
+			(and	(covers z x)
+				(leq z y)))))
+
+)

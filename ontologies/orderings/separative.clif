@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/orderings/separative.clif
+
+(cl-imports http://colore.oor.net/orderings/partial_ordering.clif)
+
+(forall (a b)
+	(if	(not (leq a b))
+		(exists (x)
+			(and	(leq x a)
+				(not (exists (z)
+					(and	(leq z x)
+						(leq z b))))))))
+
+)

@@ -1,0 +1,18 @@
+
+(cl-text http://colore.oor.net/interval_meeting/discrete_interval_meeting.clif
+
+(cl-imports http://colore.oor.net/interval_meeting/interval_meeting.clif)
+
+(cl-imports http://colore.oor.net/interval_meeting/definitions/im_def.clif)
+
+(forall (i)
+	(exists (j)
+		(and	(meets i j)
+			(moment j))))
+
+(forall (i)
+	(exists (j)
+		(and	(meets j i)
+			(moment j))))
+
+)

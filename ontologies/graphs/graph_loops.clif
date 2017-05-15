@@ -1,0 +1,9 @@
+
+(cl-text http://colore.oor.net/graphs/graph_loops.clif
+
+(cl-imports http://colore.oor.net/graphs/undirected_graph.clif)
+
+(forall (x)
+	(adj x x))
+
+)

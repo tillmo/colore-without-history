@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/orderings/semiorder.clif
+
+(cl-imports http://colore.oor.net/orderings/interval_order.clif)
+
+(forall (x a b c)
+	(if	(and	(lt a b)
+			(lt b c)
+			(not (lt a x)))
+		(lt x c)))
+
+)

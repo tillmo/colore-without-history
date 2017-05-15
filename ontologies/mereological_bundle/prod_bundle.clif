@@ -1,0 +1,18 @@
+
+(cl-text http://colore.oor.net/mereological_bundle/prod_bundle.clif
+
+(cl-imports http://colore.oor.net/mereological_bundle/m_bundle.clif)
+
+(cl-imports http://colore.oor.net/mereological_bundle/mereological_bundle_def.clif)
+
+(forall (x y p)
+	(if	(toverlaps x y p)
+		(exists (z)
+			(and	(line z)
+				(forall (v)
+					(if	(line v)
+						(iff	(tppart v z p)
+							(and	(tppart v x p)
+								(tppart v y p)))))))))
+
+)

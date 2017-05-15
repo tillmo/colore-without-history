@@ -1,0 +1,15 @@
+
+(cl-text http://colore.oor.net/mereological_bundle/mm_bundle.clif
+
+(cl-imports http://colore.oor.net/mereological_bundle/m_bundle.clif)
+
+(cl-imports http://colore.oor.net/mereological_bundle/mereological_bundle_def.clif)
+
+(forall (x y p)
+        (if     (tppart x y p)
+                (exists  (z)
+                        (and    (tppart z y p)
+                                (tdisjoint z x p)))))
+
+
+)

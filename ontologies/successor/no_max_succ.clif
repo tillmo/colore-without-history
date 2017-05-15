@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/successor/no_max_succ.clif
+
+(cl-imports http://colore.oor.net/successor/successor.clif)
+
+(forall (x)
+	(exists (y)
+		(S x y)))
+
+)

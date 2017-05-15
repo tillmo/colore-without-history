@@ -1,0 +1,15 @@
+formulas(sos).
+( all x11 ( (ped(x11)) -> ((pob(x11) | m(x11) | f(x11))) )) .
+( all x21 ( (pob(x21)) -> (ped(x21)) )) .
+( all x31 ( (m(x31)) -> (ped(x31)) )) .
+( all x41 ( (f(x41)) -> (ped(x41)) )) .
+( all x51 ( (pob(x51)) -> (- (m(x51))) )) .
+( all x61 ( (pob(x61)) -> (- (f(x61))) )) .
+( all x71 ( (m(x71)) -> (- (f(x71))) )) .
+( all x81 ( (napo(x81)) -> (pob(x81)) )) .
+( all x92 all x91 ( (hosts(x92, x91)) -> ((ped(x92) & f(x91))) )) .
+( all x102 ( (f(x102)) <-> (( exists x101 hosts(x101, x102)) ) )) .
+( all x112 all x111 ( (hosts(x112, x111)) -> (- (hosts(x111, x112))) )) .
+( all x121 ( (f(x121)) <-> ((rpf(x121) | dpf(x121))) )) .
+( all x131 (- (rpf(x131)) | - (dpf(x131)))) .
+end_of_list.

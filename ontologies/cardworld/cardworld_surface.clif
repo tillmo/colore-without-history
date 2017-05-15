@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/cardworld/cardworld_surface.clif
+
+(cl-imports http://colore.oor.net/cardworld/cardworld_edge.clif)
+
+(cl-comment "Each point and edge are part of a unique surface.")
+(forall (x s1 s2)
+        (if     (and    (surface s1) (surface s2) (part x s1) (part x s2)
+                        (or (point x) (edge x)))
+                (= s1 s2)))
+)
+

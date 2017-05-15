@@ -1,0 +1,11 @@
+
+(cl-text http://colore.oor.net/orderings/partial_ordering.clif
+
+(cl-imports http://colore.oor.net/orderings/quasiorder.clif)
+
+(forall (x y)
+        (if     (and	(leq x y)
+			(leq y x))
+		(= x y)))
+
+)

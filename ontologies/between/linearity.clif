@@ -1,0 +1,11 @@
+(cl-text http://colore.oor.net/between/linearity.clif
+
+(cl-imports http://colore.oor.net/between/betweenness.clif)
+
+(forall (x y z)
+	(or	(between x y z)
+		(between y z x)
+		(between z x y)))
+
+)
+

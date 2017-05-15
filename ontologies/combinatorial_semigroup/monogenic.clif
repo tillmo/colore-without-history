@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/combinatorial_semigroup/monogenic.clif
+
+(cl-imports http://colore.oor.net/combinatorial_semigroup/concat_quine.clif)
+
+(forall (x y)
+	(if	(and	(generator x)
+			(generator y))
+		(= x y)))
+		
+
+)

@@ -1,0 +1,19 @@
+(cl-text http://colore.oor.net/sum_arithmetic/sum_root.clif
+
+(forall (x y)
+	(= (sum x y) (sum y x)))
+
+(forall (x y z)
+	(= (sum (sum x y) z) (sum x (sum y z))))
+
+(forall (x y)
+	(exists (z)
+		(or	(= x (sum y z))
+			(= y (sum x z)))))
+
+(forall (x y u v)
+	(if	(and	(= x (sum y u))
+			(= y (sum x v)))
+		(= x y)))
+
+)

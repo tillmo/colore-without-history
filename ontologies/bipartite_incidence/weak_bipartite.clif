@@ -1,0 +1,31 @@
+
+(cl-text http://colore.oor.net/bipartite_incidence/weak_bipartite.clif
+
+(cl-comment 'Specify the reflexive and symmetric incidence relation on points and lines')
+
+(forall (x y)
+	(if	(in x y)
+		(in y x)))
+
+(forall (x)
+	(if	(or	(point x)
+			(line x))
+		(in x x)))
+
+(forall (p)
+	(if	(point p)
+		(not (line p))))
+
+(forall (x y)
+	(if	(and (in x y)
+			(point x)
+			(point y))
+		(= x y)))
+
+(forall (x y)
+	(if	(and	(in x y)
+			(line x)
+			(line y))
+		(= x y)))
+
+)

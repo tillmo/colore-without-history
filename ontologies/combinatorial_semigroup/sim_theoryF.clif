@@ -1,0 +1,22 @@
+
+(cl-text http://colore.oor.net/combinatorial_semigroup/sim_theoryF.clif
+
+(cl-imports http://colore.oor.net/combinatorial_semigroup/semigroup_gen.clif)
+
+(cl-imports http://colore.oor.net/magma/cancellative.clif)
+
+(cl-imports http://colore.oor.net/magma/definitions/magma_defs.clif)
+
+(forall (x y z w)
+	(if	(and	(generator x)
+			(generator y))
+		(not (= (op w x) (op z y)))))
+
+(forall (x)
+	(if	(not (or	(identity x)
+				(generator x)))
+		(exists (u y)
+			(and	(generator y)
+				(= (op u y) x)))))
+
+)

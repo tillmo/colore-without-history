@@ -1,0 +1,18 @@
+
+(cl-text http://colore.oor.net/ordered_cayley/oa.clif
+
+(cl-imports http://colore.oor.net/orderings/discrete_forest.clif)
+
+(cl-imports http://colore.oor.net/cayley_graph/free_semigroup_cayley.clif)
+
+(forall (x y z w)
+	(if	(apply y z w)
+		(iff	(lt x w)
+			(leq x z))))
+
+(forall (x y)
+	(if	(lt x y)
+		(exists (z w)
+			(apply z w y))))
+
+)

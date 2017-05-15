@@ -1,0 +1,27 @@
+
+(cl-text http://colore.oor.net/bipartite_incidence/chordal_incidence.clif
+
+(cl-imports http://colore.oor.net/bipartite_incidence/helly.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/definitions/bipartite_def.clif)
+
+(forall (x y z w)
+	(if	(cycle x y z w ...)
+		(exists (u v)
+			(and	(path x ... u ... w)
+				(path x ... v ... w)
+				(intersects u v)))))
+
+(forall (x y z)
+	(iff	(path x ... y z)
+		(and	(path x ... y)
+			(intersects y z))))
+
+(forall (x y)
+	(iff	(cycle x ... y)
+		(and	(path x ... y)
+			(intersect x y))))
+
+
+
+)

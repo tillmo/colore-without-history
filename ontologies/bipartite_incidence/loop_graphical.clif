@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/bipartite_incidence/loop_graphical.clif
+
+(cl-imports http://colore.oor.net/bipartite_incidence/graphical_incidence.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/line_existence.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/trivial_lines.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/unique_line.clif)
+
+)

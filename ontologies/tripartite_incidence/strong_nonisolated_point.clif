@@ -1,0 +1,15 @@
+
+(cl-text http://colore.oor.net/tripartite_incidence/strong_nonisolated_point.clif
+
+(cl-imports http://colore.oor.net/tripartite_incidence/weak_tripartite.clif)
+
+(forall (p)
+	(if	(point p)
+		(exists (l q)
+			(and	(line l)
+				(plane q)
+				(in p q)
+				(in p l)
+				(in l q)))))
+
+)

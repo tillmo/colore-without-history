@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/graphs/permutation_graph.clif
+
+(cl-imports http://colore.oor.net/graphs/comparability_graph.clif)
+
+(forall (x y ...)
+	(if	(and	(complement_cycle x ... y)
+			(complement_odd_cycle x ... y))
+		(exists (z w u)
+			(and	(complement_cycle x ... z w u ... y)
+				(not (adj z u))))))
+
+
+)

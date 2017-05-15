@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/cyclic_ordering/total_cyclic.clif
+
+(cl-imports http://colore.oor.net/cyclic_ordering/cyclic.clif)
+
+(forall (x y z)
+	(if	(and	(not (= x y))
+			(not (= x z))
+			(not (= y z)))
+		(or	(C x y z)
+			(C x z y))))
+			
+
+)

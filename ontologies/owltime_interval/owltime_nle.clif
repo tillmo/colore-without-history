@@ -1,0 +1,11 @@
+
+(cl-text http://colore.oor.net/owltime_interval/owltime_nle.clif
+
+(cl-imports http://colore.oor.net/owltime_interval/owltime_le.clif)
+
+(forall (i)
+        (if     (Interval i)
+		(PropertInterval i)))
+
+
+)

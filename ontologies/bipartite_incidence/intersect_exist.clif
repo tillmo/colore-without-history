@@ -1,0 +1,17 @@
+
+(cl-text http://colore.oor.net/bipartite_incidence/intersect_exist.clif
+
+(cl-imports http://colore.oor.net/bipartite_incidence/weak_bipartite.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/definitions/bipartite_def.clif)
+
+(forall (l1)
+	(if	(line l1)
+		(exists (l2 l3)
+			(and	(line l2)
+				(line l3)
+				(not (= l2 l3))
+				(intersect l1 l2)
+				(intersect l1 l3)))))
+
+)

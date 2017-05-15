@@ -1,0 +1,17 @@
+
+(cl-text http://colore.oor.net/incidence_bundle/in_bundle.clif
+
+(cl-imports http://colore.oor.net/tripartite_incidence/weak_tripartite.clif)
+
+(forall (x y p)
+	(if	(tin x y p)
+		(and	(plane x)
+			(line y)
+			(point p))))
+
+(forall (x y p)
+	(if	(tin x y p)
+		(and	(in p x)
+			(in p y))))
+
+)

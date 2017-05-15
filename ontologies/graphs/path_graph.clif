@@ -1,0 +1,20 @@
+
+(cl-text http://colore.oor.net/graphs/path_graph.clif
+
+(cl-imports http://colore.oor.net/graphs/simple_graph.clif)
+
+(cl-imports http://colore.oor.net/graphs/nobranch.clif)
+
+(cl-imports http://colore.oor.net/graphs/double_leaf.clif)
+
+(cl-imports http://colore.oor.net/graphs/definitions/graph_def.clif)
+
+(exists (x)
+	(leaf x))
+
+(forall (x y)
+	(if	(not (= x y))
+		(exists (z)
+			(adj x z))))
+
+)

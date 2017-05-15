@@ -1,0 +1,24 @@
+(cl-text http://colore.oor.net/approximate_point/approximate_dense_point.clif
+
+(cl-imports http://colore.oor.net/approximate_point/approximate_point.clif)
+
+(cl-imports http://colore.oor.net/approximate_point/ap_def.clif)
+
+(forall (x y)
+(iff	(meets x y)
+	(and	(precedes x y)
+		(forall (z)
+			(if	(and	(ncdf x z)
+					(ncdf z y))
+				(exists (u)
+					(and	(finer u z)
+						(ncdf x u)
+						(ncdf u y))))))))
+
+(forall (x)
+	(exists (y)
+		(and	(finer y x)
+			(not (finer  x y)))))
+
+)
+

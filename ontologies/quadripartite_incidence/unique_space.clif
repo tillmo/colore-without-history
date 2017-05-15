@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/quadripartite_incidence/unique_space.clif
+
+(cl-imports http://colore.oor.net/quadripartite_incidence/weak_quadripartite.clif)
+
+(forall (x y z)
+	(if	(and	(plane x)
+			(space y)
+			(space z)
+			(in x y)
+			(in x z))
+		(= y z)))
+
+)

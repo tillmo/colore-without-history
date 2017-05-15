@@ -1,0 +1,17 @@
+
+(cl-text http://colore.oor.net/mereological_geometry/filter_mg.clif
+
+(cl-imports http://colore.oor.net/mereological_geometry/upper_mg.clif)
+
+(cl-module point (cl-imports http://colore.oor.net/mereology/mereology_def.clif))
+
+(forall (x y l)
+	(if	(and	(point x)
+			(point y)
+			(line l)
+			(in x l)
+			(in y l)
+			(prod x y z))
+		(in z l)))
+
+)

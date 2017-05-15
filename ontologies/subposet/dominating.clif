@@ -1,0 +1,19 @@
+
+(cl-text http://colore.oor.net/subposet/dominating.clif
+
+(cl-imports http://colore.oor.net/subposet/partial_subposet.clif)
+
+(forall (x)
+	(if	(poset_element x)
+		(exists (y)
+			(and	(mereo_element y)
+				(leq y x)))))
+
+(forall (x)
+	(if	(mereo_element x)
+		(exists (y)
+			(and	(poset_element y)
+				(part y x)))))
+
+
+)

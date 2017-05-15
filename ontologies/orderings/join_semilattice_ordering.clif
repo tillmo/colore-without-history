@@ -1,0 +1,17 @@
+
+(cl-text http://colore.oor.net/orderings/join_semilattice_ordering.clif
+
+(cl-imports http://colore.oor.net/orderings/partial_ordering.clif)
+
+(cl-comment "Unique join")
+
+(forall (x y) 
+	(exists (j)
+		(and 	(leq x j)
+			(leq y j)
+			(forall (z)
+				(if	(and	(leq x z)
+						(leq y z))
+					(leq j z))))))
+
+)

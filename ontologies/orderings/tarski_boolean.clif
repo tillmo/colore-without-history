@@ -1,0 +1,16 @@
+
+(cl-text http://colore.oor.net/orderings/tarski_boolean.clif
+
+(cl-imports http://colore.oor.net/orderings/partial_ordering.clif)
+
+(cl-imports http://colore.oor.net/orderings/definitions/tarki_defs.clif)
+
+(forall (x y)
+	(exists (s)
+		(join x y s)))
+
+(forall (x)
+	(exists (y)
+		(comp x y)))
+
+)

@@ -1,0 +1,13 @@
+
+(cl-text http://colore.oor.net/incidence_bundle/wpl_bundle.clif
+
+(cl-imports http://colore.oor.net/incidence_bundle/in_bundle.clif)
+
+(forall (x p)
+	(if	(and	(plane x)
+			(in p x)
+			(point p))
+		(exists (y)
+			(tin x y p))))
+
+)

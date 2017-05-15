@@ -1,0 +1,36 @@
+/*******************************************************************************
+ * Copyright (c) University of Toronto and others. All rights reserved. 
+ * The content of this file is licensed under the Creative Commons Attribution-
+ * ShareAlike 3.0 Unported license. The legal text of this license can be
+ * found at http://creativecommons.org/licenses/by-sa/3.0/legalcode.
+ *
+ * Contributors:
+ *    Torsten Hahmann - initial implementation
+ *******************************************************************************/
+
+(cl-text omtb/omtb_down
+
+(cl-imports omt/omt_down)
+
+(cl-imports codib/codib_down)
+
+(cl-imports codi/defs/icon)
+
+
+(cl-comment "OMT-A4")
+
+(forall (r x y z)
+	(if
+		(and
+			(Btw r x y z)
+			(ICon r)
+		)
+		(or
+			(Covers r y)
+			(EqDim r y)
+		)
+	)
+)
+
+			
+)

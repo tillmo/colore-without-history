@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/periods/directed_periods.clif
+
+(cl-imports http://colore.oor.net/periods/periods.clif)
+
+(cl-comment "DIR")
+(forall (x y)
+                (exists (z)
+                                (and    (inclusion x z)
+                                        (inclusion y z))))
+
+)

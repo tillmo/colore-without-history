@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/orderings/discrete_linear_order_no_end.clif
+
+(cl-imports http://colore.oor.net/orderings/noinitial.clif)
+
+(cl-imports http://colore.oor.net/orderings/nofinal.clif)
+
+(cl-imports http://colore.oor.net/orderings/discrete_linear.clif)
+
+)

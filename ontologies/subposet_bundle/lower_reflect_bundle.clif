@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/subposet_bundle/lower_reflect_bundle.clif
+
+(cl-imports http://colore.oor.net/subposet_bundle/sub_bundle.clif)
+
+(forall (x y y1 p)
+        (if     (and    (tlt x y p)
+                        (tpart y1 y p))
+                (exists (x1)
+                        (and    (tpart x1 x p)
+                                (tlt x1 y1 p)))))
+
+
+)

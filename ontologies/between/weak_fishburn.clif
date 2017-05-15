@@ -1,0 +1,11 @@
+(cl-text http://colore.oor.net/between/weak_fishburn.clif
+
+(cl-imports http://colore.oor.net/between/semi_fishburn.clif)
+
+(forall (x y z a)
+	(if	(and	(between x y z)
+			(not	(between a y z)))
+		(or	(between x a z)
+			(between x y a))))
+
+)

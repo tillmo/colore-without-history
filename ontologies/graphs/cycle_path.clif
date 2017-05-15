@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/graphs/cycle_path.clif
+
+(cl-imports http://colore.oor.net/graphs/simple_graph.clif)
+
+(cl-imports http://colore.oor.net/graphs/nobranch.clif)
+
+(cl-imports http://colore.oor.net/graphs/double_leaf.clif)
+
+)

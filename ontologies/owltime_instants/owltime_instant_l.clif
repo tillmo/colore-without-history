@@ -1,0 +1,13 @@
+
+(cl-text http://colore.oor.net/owltime_instants/owltime_instant_l.clif
+
+(cl-imports http://colore.oor.net/owltime_instants/owltime_instants.clif)
+
+(forall (t1 t2)
+	(if	(and	(Instant t1)
+			(Instant t2))
+		(or	(before t1 t2)
+			(before t2 t1)
+			(= t1 t2))))
+
+)

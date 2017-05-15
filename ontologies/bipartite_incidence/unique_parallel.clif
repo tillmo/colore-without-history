@@ -1,0 +1,19 @@
+
+(cl-text http://colore.oor.net/bipartite_incidence/unique_parallel.clif
+
+(cl-imports http://colore.oor.net/bipartite_incidence/weak_bipartite.clif)
+
+(cl-imports http://colore.oor.net/bipartite_incidence/definitions/bipartite_def.clif)
+
+(forall (p l1 l2 l3)
+	(if	(and	(point p)
+			(line l1)
+			(in p l2)
+			(line l2)
+			(parallel l1 l2)
+			(line l3)
+			(not (= l2 l3))
+			(parallel l1 l3))
+		(not (in p l3))))
+
+)

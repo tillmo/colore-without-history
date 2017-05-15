@@ -1,0 +1,13 @@
+
+(cl-text http://colore.oor.net/between/convexity.clif
+
+(cl-imports http://colore.oor.net/between/weak_between.clif)
+
+(forall (x y z w v)
+	(if	(and	(between x y z)
+			(between x w z)
+			(between y v w))
+		(between x v z)))
+
+)
+

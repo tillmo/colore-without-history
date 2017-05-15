@@ -1,0 +1,17 @@
+
+(cl-text http://colore.oor.net/ordered_ringoid/ordered_field.clif
+
+(cl-imports http://colore.oor.net/ringoids/field.clif)
+
+(cl-imports http://colore.oor.net/orderings/linear_ordering.clif)
+
+(forall (x y z)
+	(if	(leq x y)
+		(leq (sum x z) (sum y z))))
+
+(forall (x y)
+	(if	(and	(leq zero a)
+			(leq zero b))
+		(leq zero (prod x y))))
+
+)

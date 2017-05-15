@@ -1,0 +1,21 @@
+
+(cl-text http://colore.oor.net/mereological_geometry/summg.clif
+
+(cl-imports http://colore.oor.net/mereological_geometry/wmg.clif)
+
+(cl-imports http://colore.oor.net/mereological_geometry/mg_def.clif)
+
+(forall (x y l)
+        (if     (underlaps_line x y l)
+                (exists (z)
+			(and	(point z)
+				(in z l)
+                        	(forall (v)
+					(if	(and	(point v)
+							(in v l))
+                                		(iff    (overlaps_line v z l)
+                                        		(or     (overlaps_line v x l)
+                                                		(overlaps_line v y l)))))))))
+
+
+)

@@ -1,0 +1,15 @@
+
+(cl-text http://colore.oor.net/graphs/chordal_graph.clif
+
+(cl-imports http://colore.oor.net/graphs/simple_graph.clif)
+
+(cl-imports http://colore.oor.net/graphs/definitions/graph_def.clif)
+
+(forall (x y z w ...)
+	(if	(cycle x y z w ...)
+		(exists (u v)
+			(and	(path x ... u ... w)
+				(path x ... v ... w)
+				(adj u v)))))
+
+)

@@ -1,0 +1,12 @@
+
+(cl-text http://colore.oor.net/orderings/interval_order.clif
+
+(cl-imports http://colore.oor.net/orderings/partial_ordering.clif)
+
+(forall (x y a b)
+	(if	(and	(lt a x)
+			(lt b y))
+		(or	(lt a y)
+			(lt b x))))
+
+)

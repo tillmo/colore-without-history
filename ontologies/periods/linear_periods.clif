@@ -1,0 +1,14 @@
+
+(cl-text http://colore.oor.net/periods/linear_periods.clif
+
+(cl-imports http://colore.oor.net/periods/periods.clif)
+
+(cl-imports http://colore.oor.net/periods/definitions/periods_def.clif)
+
+(cl-comment "LIN*")
+(forall (x y)
+(or             (precedence x y)
+                (precedence y x)
+                (overlaps x y)))
+
+)

@@ -1,0 +1,11 @@
+
+(cl-text http://colore.oor.net/incidence_bundle/lp_bundle.clif
+
+(cl-imports http://colore.oor.net/incidence_bundle/in_bundle.clif)
+
+(forall (x)
+	(if	(line x)
+		(exists (y t)
+			(tin y x t))))
+
+)

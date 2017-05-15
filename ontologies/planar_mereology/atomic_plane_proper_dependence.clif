@@ -1,0 +1,10 @@
+
+(cl-text http://colore.oor.net/planar_mereology/atomic_plane_proper_dependence.clif
+
+(cl-imports http://colore.oor.net/tripartite_incidence/plane_containment.clif)
+
+(cl-imports http://colore.oor.net/planar_mereology/atomic_plane_dependence.clif)
+
+(cl-imports http://colore.oor.net/planar_mereology/atomic_noncollinear_coplanar.clif)
+
+)
